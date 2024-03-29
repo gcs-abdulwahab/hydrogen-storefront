@@ -8,4 +8,6 @@ module.exports = {
     'no-useless-escape': 'off',
     'no-case-declarations': 'off',
   },
+  "editor.codeActionsOnSave": { "source.fixAll": true },
+  "editor.formatOnSave": false,
 };
