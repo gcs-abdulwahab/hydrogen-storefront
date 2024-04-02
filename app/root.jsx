@@ -1,5 +1,7 @@
-import {useNonce} from '@shopify/hydrogen';
+import { useNonce } from '@shopify/hydrogen';
 import { defer } from '@shopify/remix-oxygen';
+import stylesheet from "~/styles/tailwind.css";
+
 
 import {
   Links,
@@ -39,7 +41,8 @@ export const shouldRevalidate = ({formMethod, currentUrl, nextUrl}) => {
 export function links() {
   return [
     {rel: 'stylesheet', href: resetStyles},
-    {rel: 'stylesheet', href: appStyles},
+    { rel: 'stylesheet', href: appStyles },
+    { rel: "stylesheet", href: stylesheet },
     {
       rel: 'preconnect',
       href: 'https://cdn.shopify.com',
